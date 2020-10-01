@@ -4,8 +4,8 @@ export default function Fragmento() {
     return (
         //O retorno dos componentes devem estar dentro de uma TAG
         <>
-            <h2>Pedro</h2>
-            <p>Laura</p>
+            <h2>Fragmento</h2>
+            <p>Fragmento</p>
         </>
     )
 }
