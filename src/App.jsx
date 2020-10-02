@@ -11,6 +11,7 @@ import FamiliaMembro from './components/basicos/FamiliaMembro'
 import ListaAlunos from './components/repeticao/ListaAlunos'
 import TabelaProdutos from './components/repeticao/TabelaProduto'
 import ParOuImpar from './components/condicional/ParOuImpar'
+import UsuarioInfo from './components/condicional/UsuarioInfo'
 
 export default function App(props) {
     return (
@@ -19,6 +20,9 @@ export default function App(props) {
             <div className='Cards'>
                 <Card titulo="08# Rederização condicional" color="#982395">
                     <ParOuImpar numero={20}/>
+                    <UsuarioInfo usuario={{nome: 'Fernando'}}/>
+                    <UsuarioInfo usuario={{nome: ''}}/>
+                    <UsuarioInfo usuario={{email: 'eu@ad.com'}}/>
                 </Card>
 
                 <Card titulo="07# Tabela Produtos" color="#8A2BE2">
