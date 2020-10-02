@@ -3,7 +3,7 @@ import alunos from '../../data/alunos'
 
 export default function ListaAlunos() {
 
-    const lis = alunos.map((aluno) => {
+    const alunosLista = alunos.map((aluno) => {
         return (
             <li>
                 {aluno.id}) {aluno.nome} - {aluno.nota} 
@@ -13,8 +13,8 @@ export default function ListaAlunos() {
 
     return (
         <div>
-            <ul>
-               {lis}
+            <ul style={{listStyle: 'none'}}>
+               {alunosLista}
             </ul>
         </div>
     )
