@@ -13,16 +13,21 @@ import TabelaProdutos from './components/repeticao/TabelaProduto'
 import ParOuImpar from './components/condicional/ParOuImpar'
 import UsuarioInfo from './components/condicional/UsuarioInfo'
 import DiretaPai from './components/comunicacao/DiretaPai'
+import IndiretaPai from './components/comunicacao/IndiretaPai'
 
 export default function App(props) {
     return (
         <div className="App">
             <h1>Fundamentos React</h1>
             <div className='Cards'>
-                <Card titulo="09# Comunicação Direta" color="#59323C">
-                    <DiretaPai>
+                <Card titulo="10# Comunicação Indireta" color="#01343C">
+                    <IndiretaPai>
 
-                    </DiretaPai>
+                    </IndiretaPai>
+                </Card>
+
+                <Card titulo="09# Comunicação Direta" color="#59323C">
+                    <DiretaPai/>
                 </Card>
 
                 <Card titulo="08# Rederização condicional" color="#982395">
