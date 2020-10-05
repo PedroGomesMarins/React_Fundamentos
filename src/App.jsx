@@ -12,17 +12,24 @@ import ListaAlunos from './components/repeticao/ListaAlunos'
 import TabelaProdutos from './components/repeticao/TabelaProduto'
 import ParOuImpar from './components/condicional/ParOuImpar'
 import UsuarioInfo from './components/condicional/UsuarioInfo'
+import DiretaPai from './components/comunicacao/DiretaPai'
 
 export default function App(props) {
     return (
         <div className="App">
             <h1>Fundamentos React</h1>
             <div className='Cards'>
+                <Card titulo="09# Comunicação Direta" color="#59323C">
+                    <DiretaPai>
+
+                    </DiretaPai>
+                </Card>
+
                 <Card titulo="08# Rederização condicional" color="#982395">
-                    <ParOuImpar numero={20}/>
-                    <UsuarioInfo usuario={{nome: 'Fernando'}}/>
-                    <UsuarioInfo usuario={{nome: ''}}/>
-                    <UsuarioInfo usuario={{email: 'eu@ad.com'}}/>
+                    <ParOuImpar numero={20} />
+                    <UsuarioInfo usuario={{ nome: 'Fernando' }} />
+                    <UsuarioInfo usuario={{ nome: '' }} />
+                    <UsuarioInfo usuario={{ email: 'eu@ad.com' }} />
                 </Card>
 
                 <Card titulo="07# Tabela Produtos" color="#8A2BE2">
@@ -30,7 +37,7 @@ export default function App(props) {
                 </Card>
 
                 <Card titulo="06# Repetição Alunos" color="#FF4C65">
-                    <ListaAlunos/>
+                    <ListaAlunos />
                 </Card>
 
                 <Card titulo="05# Componentes com Filhos" color="#00C8F8">
