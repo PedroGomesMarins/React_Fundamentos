@@ -12,7 +12,7 @@ export default function IndiretaPai(props){
         setIdade(idade)
         setNerd(nerd)
     }
-    
+     
     return(
         <div>
             <div>
